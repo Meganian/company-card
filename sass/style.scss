@@ -64,7 +64,20 @@ div.container {
 }
 .header .navbar {
   padding: 30px 65px 0 65px;
+  .navbar-toggler-icon {
+    &:before {
+      content:'\e807';
+      @include fontello;
+      font-size:3rem;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
 }
+ 
+
+.header .navbar-light .navbar-nav .nav-link { color: white}
 .header .nav-link {
   color: white;
   text-transform: uppercase;
@@ -74,6 +87,7 @@ div.container {
     background-color: grey;
   }
 }
+
 .search {     
   &:before {
     content:'\e801';
